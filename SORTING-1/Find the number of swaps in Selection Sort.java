@@ -15,8 +15,9 @@ class Main{
                 int temp = arr[minindex] ;
                 arr[minindex] = arr[i] ;
                 arr[i] = temp ;
+                swaps++;
             }
-            swaps++;
+            
         }
         return swaps;
     }
@@ -31,7 +32,7 @@ class Main{
             for(int i=0 ; i<n ; i++) {
                 arr[i] = sc.nextInt() ;
             }
-            System.out.print(count(arr)) ;
+            System.out.println(count(arr)) ;
         }
     }
 }
